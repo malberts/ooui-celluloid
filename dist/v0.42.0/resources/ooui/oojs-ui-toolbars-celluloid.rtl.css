@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T11:48:35Z
+ * Date: 2021-11-21T14:29:39Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -451,7 +451,7 @@
   color: var(--bs-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle:hover {
-  background-color: rgba(41, 98, 204, 0.1);
+  background-color: rgba( var( --bs-primary-rgb ), 0.1 );
   color: var(--bs-primary);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
@@ -559,7 +559,7 @@
   background-color: var(--bs-primary-100);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled:hover {
-  background-color: rgba(41, 98, 204, 0.1);
+  background-color: rgba( var( --bs-primary-rgb ), 0.1 );
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
   color: var(--bs-primary);
@@ -594,7 +594,7 @@
   right: 0.71428571em;
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
-  background-color: rgba(41, 98, 204, 0.1);
+  background-color: rgba( var( --bs-primary-rgb ), 0.1 );
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-tool-active {
   background-color: var(--bs-primary-100);
