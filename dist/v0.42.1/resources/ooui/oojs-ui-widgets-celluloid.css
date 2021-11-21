@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T11:48:39Z
+ * Date: 2021-11-21T14:29:30Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -582,7 +582,7 @@
   color: var(--bs-primary);
 }
 .oo-ui-outlineOptionWidget.oo-ui-optionWidget-pressed {
-  background-color: rgba(41, 98, 204, 0.1);
+  background-color: rgba( var( --bs-primary-rgb ), 0.1 );
   color: var(--bs-primary);
 }
 .oo-ui-outlineOptionWidget.oo-ui-indicatorElement .oo-ui-labelElement-label {
