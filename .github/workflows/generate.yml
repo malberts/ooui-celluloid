@@ -1,0 +1,59 @@
+name: Generate
+
+on:
+  schedule:
+    - cron: '0 0 * * 6'
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+          - v0.42.0
+          - v0.42.1
+    env:
+      VERSION: Unknown
+
+    steps:
+      - name: Checkout Celluloid
+        uses: actions/checkout@v2
+
+      - name: Checkout OOUI
+        uses: actions/checkout@v2
+        with:
+          repository: wikimedia/oojs-ui
+          ref: ${{ matrix.tag }}
+          path: oojs-ui
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'npm'
+          cache-dependency-path: oojs-ui/package-lock.json
+
+      - run: cd oojs-ui && npm install
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+
+      - run: make create
+      - run: make convert
+      - run: make build
+
+      - name: Get version
+        run: |
+          echo "VERSION=$(grep -oP 'OOUI \Kv.*' oojs-ui/dist/oojs-ui-core-celluloid.css)" >> $GITHUB_ENV
+      - run: make copy TAG=${{ env.VERSION }}
+      - run: make check-diff
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Generate ${{ env.VERSION }}
+          title: Generate ${{ env.VERSION }}
+          body: ''
+          delete-branch: true
+          branch: generate-${{ env.VERSION }}
