@@ -114,7 +114,7 @@
 @color-placeholder:               @wmui-color-base30;
 // Primary 'Progressive' Color, Background Color and states
 @background-color-primary:        @wmui-color-accent90;
-@background-color-primary--hover: rgba( 41, 98, 204, 0.1 );
+@background-color-primary--hover: ~"rgba( var( --bs-primary-rgb ), 0.1 )";
 @color-primary:                   @wmui-color-accent50;
 @color-primary--hover:            @wmui-color-accent50--lighten;
 @color-primary--active:           @wmui-color-accent30;
@@ -316,3 +316,24 @@
 
 // == Celluloid ==
 @color-primary--active--disabled: pink;
+
+
+// == Echo ==
+@grey-light:  @wmui-color-base30;
+@grey-medium: @wmui-color-base20;
+
+@badge-counter-background-seen:           @grey-light;
+@badge-counter-background-unseen-alert:   @color-destructive;
+@badge-counter-background-unseen-message: @color-primary;
+
+
+// == mwui ==
+@colorGray1: @wmui-color-base0;
+@colorGray2: @wmui-color-base10;
+@colorGray4: @wmui-color-base10--lighten;
+@colorGray5: @wmui-color-base20;
+@colorGray7: @wmui-color-base30;
+@colorGray10: @wmui-color-base50;
+@colorGray12: @wmui-color-base70;
+@colorGray14: @wmui-color-base80;
+@colorGray15: @wmui-color-base90;
