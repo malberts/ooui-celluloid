@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T14:29:30Z
+ * Date: 2021-11-27T16:14:22Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -578,7 +578,7 @@
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-top > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-inline > .oo-ui-fieldLayout-body {
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header {
@@ -629,7 +629,7 @@
 .oo-ui-fieldLayout-messages {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 50em;
+  max-width: 100%;
   padding: 4px 0;
 }
 .oo-ui-fieldLayout-messages > .oo-ui-messageWidget {
@@ -655,7 +655,7 @@
   white-space: nowrap;
 }
 .oo-ui-actionFieldLayout.oo-ui-fieldLayout-align-top {
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget {
   margin-right: 8px;
@@ -724,7 +724,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   cursor: help;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-header {
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-header .oo-ui-iconElement-icon {
   height: 1.42857143em;
@@ -1436,7 +1436,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-dropdownInputWidget .oo-ui-dropdownWidget,
 .oo-ui-dropdownInputWidget.oo-ui-dropdownInputWidget-php select,
@@ -1636,7 +1636,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-textInputWidget .oo-ui-inputWidget-input {
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
@@ -1905,7 +1905,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   position: relative;
   vertical-align: middle;
   width: 100%;
-  max-width: 50em;
+  max-width: 100%;
   margin-right: 8px;
 }
 .oo-ui-dropdownWidget-handle {
@@ -2149,7 +2149,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-progressBarWidget {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  max-width: 50em;
+  max-width: 100%;
   border: 1px solid var(--bs-gray-500);
   border-radius: 1em;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -2207,7 +2207,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-numberInputWidget {
   display: inline-block;
   position: relative;
-  max-width: 50em;
+  max-width: 100%;
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget,
 .oo-ui-numberInputWidget-buttoned .oo-ui-inputWidget-input {
@@ -2251,7 +2251,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-selectFileInputWidget {
   width: 100%;
-  max-width: 50em;
+  max-width: 100%;
   min-height: 2.28571429em;
 }
 .oo-ui-selectFileInputWidget-selectButton > .oo-ui-buttonElement-button {
@@ -2301,7 +2301,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T14:29:30Z
+ * Date: 2021-11-27T16:14:22Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -3067,7 +3067,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: inline-block;
   position: relative;
   width: 100%;
-  max-width: 50em;
+  max-width: 100%;
   vertical-align: top;
 }
 .oo-ui-tagMultiselectWidget-handle {
@@ -3378,7 +3378,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T14:29:30Z
+ * Date: 2021-11-27T16:14:22Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -4079,7 +4079,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T14:29:30Z
+ * Date: 2021-11-27T16:14:22Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -4521,7 +4521,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-21T14:29:30Z
+ * Date: 2021-11-27T16:14:22Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
