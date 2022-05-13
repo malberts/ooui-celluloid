@@ -13,6 +13,9 @@ jobs:
         tag:
           - v0.42.0
           - v0.42.1
+          - v0.43.0
+          - v0.43.1
+          - v0.43.2
     env:
       VERSION: Unknown
 
