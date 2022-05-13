@@ -4,3 +4,5 @@ oojs-ui
 DOCKER_ENV
 docker_tag
 output.log
+
+.idea
